@@ -1,0 +1,309 @@
+
+/* Minecraft theme for my Grade 9 website */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #17251b;
+  color: #f4f7ef;
+  line-height: 1.6;
+}
+
+header {
+  background: #25382a;
+  border-bottom: 5px solid #58b832;
+  padding: 15px 5%;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: #a5f078;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px #111;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: 0.25s;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  background: #43852c;
+  color: #fff7a8;
+  transform: translateY(-3px);
+}
+
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: 30px auto;
+  min-height: 65vh;
+}
+
+.hero {
+  text-align: center;
+  padding: 55px 20px;
+  background: linear-gradient(135deg, #326c2d, #25382a);
+  border: 4px solid #8ee36a;
+  box-shadow: 7px 7px #0b130d;
+  animation: appear 0.7s ease;
+}
+
+.hero h1 {
+  font-size: clamp(30px, 5vw, 48px);
+  color: #b4ff8c;
+  line-height: 1.2;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 15px auto 25px;
+}
+
+.tag {
+  display: inline-block;
+  background: #ffdc63;
+  color: #20251b;
+  padding: 5px 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.button {
+  display: inline-block;
+  background: #ffdc63;
+  color: #20251b;
+  padding: 11px 18px;
+  margin: 5px;
+  border: 3px solid #fff0a3;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px #795b27;
+  background: #fff09b;
+}
+
+.section {
+  margin: 35px 0;
+}
+
+h2 {
+  color: #a5f078;
+}
+
+.muted {
+  color: #cbd7c8;
+}
+
+.card-grid,
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #2c3b30;
+  border: 3px solid #50664f;
+  padding: 20px;
+  box-shadow: 5px 5px #101811;
+  animation: appear 0.7s ease;
+  transition: 0.25s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #a5f078;
+}
+
+.card h3 {
+  color: #ffdc63;
+}
+
+.icon {
+  font-size: 35px;
+}
+
+.gallery-card {
+  overflow: hidden;
+  background: #2c3b30;
+  border: 3px solid #50664f;
+  transition: 0.25s;
+}
+
+.gallery-card:hover {
+  transform: scale(1.03);
+  border-color: #ffdc63;
+}
+
+.gallery-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+.gallery-card div {
+  padding: 12px;
+}
+
+.gallery-card h3 {
+  color: #a5f078;
+  margin: 0;
+}
+
+.panel {
+  background: #2c3b30;
+  padding: 22px;
+  margin: 25px 0;
+  border: 3px solid #50664f;
+  box-shadow: 5px 5px #101811;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 2px solid #61755f;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background: #244629;
+  color: #ffdc63;
+}
+
+tr:nth-child(even) td {
+  background: #354638;
+}
+
+form {
+  display: grid;
+  gap: 14px;
+}
+
+label {
+  display: block;
+  color: #b4ff8c;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 2px solid #71866e;
+  border-radius: 4px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 130px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid #ffdc63;
+}
+
+footer {
+  margin-top: 45px;
+  padding: 25px 10px;
+  text-align: center;
+  background: #25382a;
+  border-top: 5px solid #795034;
+  color: #d0dbcd;
+}
+
+footer strong {
+  color: #ffdc63;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 700px) {
+  .header-inner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  .card-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .card-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  main {
+    width: 92%;
+  }
+
+  .hero {
+    padding: 35px 15px;
+  }
+
+  nav a {
+    padding: 7px;
+    font-size: 14px;
+  }
+}
