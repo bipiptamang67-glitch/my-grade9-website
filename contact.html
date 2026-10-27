@@ -1,111 +1,86 @@
 
 <!DOCTYPE html>
-<html>
-<head><escape><link rel="stylesheet" href="style.css"></escape>
-    <title>Contact Me</title>
-    <style>
-        body {
-            background-color: lightblue;
-            font-family: Arial;
-            text-align: center;
-        }
-
-        h1 {
-            color: darkblue;
-        }
-
-        input, textarea, select {
-            padding: 8px;
-            margin: 8px;
-            width: 250px;
-        }
-
-        button {
-            background-color: darkblue;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-        }
-    </style>
-<style>
-    nav {
-        background-color: darkblue;
-        padding: 15px;
-        text-align: center;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        margin: 10px;
-        font-size: 18px;
-    }
-
-    nav a:hover {
-        color: yellow;
-    }
-</style>
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | BlockWorld</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<body>
 
+<header>
+  <div class="header-inner">
+    <p class="logo">⛏ BLOCKWORLD</p>
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="information.html">Information</a>
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+      <a href="information.html">Information</a>
     </nav>
+  </div>
+</header>
 
-    
-
-
+<main>
+  <section class="hero">
+    <span class="tag">Connect with the builder</span>
     <h1>Contact Me</h1>
+    <p>Have an idea, a question, or a suggestion for my website? Use the form below!</p>
+  </section>
 
-    <form>
-        <p>First Name:</p>
-        <input type="text" placeholder="Enter first name"><br>
+  <section class="section panel">
+    <h2>Send a Message</h2>
 
-        <p>Last Name:</p>
-        <input type="text" placeholder="Enter last name"><br>
+    <form action="#" method="get">
+      <div>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name"
+               placeholder="Enter your name" required>
+      </div>
 
-        <p>Phone Number:</p>
-        <input type="tel" placeholder="Enter phone number"><br>
+      <div>
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email"
+               placeholder="Enter your email" required>
+      </div>
 
-        <p>Address:</p>
-        <input type="text" placeholder="Enter address"><br>
+      <div>
+        <label for="topic">Message Topic</label>
+        <select id="topic" name="topic">
+          <option value="feedback">Website Feedback</option>
+          <option value="gallery">Gallery Suggestion</option>
+          <option value="question">Question</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
 
-        <p>Email:</p>
-        <input type="email" placeholder="Enter email"><br>
+      <div>
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message"
+                  placeholder="Write your message here..."
+                  required></textarea>
+      </div>
 
-        <p>Gender:</p>
-        <input type="radio" name="gender"> Male
-        <input type="radio" name="gender"> Female
-        <input type="radio" name="gender"> Other
-        <br>
-
-        <p>Reason for Contact:</p>
-        <select>
-            <option>Choose an option</option>
-            <option>Question</option>
-            <option>Feedback</option>
-            <option>Other</option>
-        </select><br>
-
-        <p>Message:</p>
-        <textarea rows="5" placeholder="Write your message"></textarea>
-        <br>
-
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
+      <button class="button" type="submit">Submit Message</button>
     </form>
-<footer>
-    <hr>
-    <p>Welcome to My Portfolio</p>
-    <p>Created by: Bipin Tamang | Grade 9</p>
-    <p>&copy; 2026 My Portfolio</p>
-</footer>
 
+    <p class="muted">
+      Note: This is a demonstration form for my school project.
+      It does not send messages to an inbox.
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>Thanks for Visiting!</h2>
+    <p>Your feedback can help make BlockWorld better. Explore the gallery to see more nature-inspired scenes.</p>
+    <a class="button" href="gallery.html">Return to Gallery →</a>
+  </section>
+</main>
+
+<footer>
+  <p>Created by <strong>Bipin Tamang</strong></p>
+  <p>Grade 9 Computer Science Project · HTML &amp; CSS</p>
+</footer>
 
 </body>
 </html>
