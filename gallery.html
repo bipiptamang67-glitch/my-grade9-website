@@ -1,76 +1,99 @@
 
 <!DOCTYPE html>
-<html>
-<head><escape><link rel="stylesheet" href="style.css"></escape>
-    <title>My Gallery</title>
-    <style>
-        body {
-            background-color: lightblue;
-            font-family: Arial;
-            text-align: center;
-        }
-
-        h1 {
-            color: darkblue;
-        }
-
-        img {
-            width: 250px;
-            height: 160px;
-            margin: 10px;
-        }
-    </style>
-<style>
-    nav {
-        background-color: darkblue;
-        padding: 15px;
-        text-align: center;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        margin: 10px;
-        font-size: 18px;
-    }
-
-    nav a:hover {
-        color: yellow;
-    }
-</style>
-
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | BlockWorld</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<body>
 
+<header>
+  <div class="header-inner">
+    <p class="logo">⛏ BLOCKWORLD</p>
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact</a> |
-        <a href="information.html">Information</a>
+      <a href="index.html">Home</a>
+      <a href="gallery.html" aria-current="page">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="information.html">Information</a>
     </nav>
+  </div>
+</header>
 
-    <h1>Contact Me</h1>
+<main>
+  <section class="hero">
+    <span class="tag">Explore the block world</span>
+    <h1>Minecraft Gallery</h1>
+    <p>Explore these beautiful nature scenes inspired by the forests, mountains, and landscapes found in block-building adventures.</p>
+  </section>
 
+  <section class="section">
+    <h2>Explore the Biomes</h2>
+    <p class="muted">Move your mouse over a card to see its animation. Images need an internet connection.</p>
 
-    <h1>My Photo Gallery</h1>
+    <div class="gallery-grid">
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80" alt="Green forest with sunlight">
+        <div>
+          <h3>🌲 Forest Biome</h3>
+          <p>A peaceful green forest ready to explore.</p>
+        </div>
+      </article>
 
-    <h2>Nature</h2>
-    <img src="https://picsum.photos/id/10/250/160" alt="Forest">
-    <img src="https://picsum.photos/id/15/250/160" alt="Waterfall">
-    <img src="https://picsum.photos/id/29/250/160" alt="Nature">
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80" alt="Tall mountains">
+        <div>
+          <h3>⛰ Mountain Peaks</h3>
+          <p>Climb high and discover new views.</p>
+        </div>
+      </article>
 
-    <h2>My Hobbies</h2>
-    <img src="https://picsum.photos/id/96/250/160" alt="Books">
-    <img src="https://picsum.photos/id/160/250/160" alt="Activity">
-    <img src="https://picsum.photos/id/180/250/160" alt="Photography">
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=800&q=80" alt="Lake surrounded by mountains">
+        <div>
+          <h3>💧 Lake View</h3>
+          <p>A relaxing place to build a base.</p>
+        </div>
+      </article>
+
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Open green landscape">
+        <div>
+          <h3>🌿 Open Plains</h3>
+          <p>Plenty of space for a creative build.</p>
+        </div>
+      </article>
+
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=800&q=80" alt="Tall trees in a forest">
+        <div>
+          <h3>🌳 Deep Woods</h3>
+          <p>Explore trees and hidden pathways.</p>
+        </div>
+      </article>
+
+      <article class="gallery-card">
+        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=800&q=80" alt="Wildlife in nature">
+        <div>
+          <h3>🦌 Wild Nature</h3>
+          <p>Discover the beauty of the natural world.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Build Your Own World!</h2>
+    <p>Every great build starts with an idea. Keep learning, keep creating, and let your imagination grow.</p>
+    <a class="button" href="contact.html">Send a Suggestion →</a>
+  </section>
+</main>
+
 <footer>
-    <hr>
-    <p>Welcome to My Portfolio</p>
-    <p>Created by: Bipin Tamang| Grade 9</p>
-    <p>&copy; 2026 My Portfolio</p>
+  <p>Created by <strong>Bipin Tamang</strong></p>
+  <p>Grade 9 Computer Science Project · HTML &amp; CSS</p>
 </footer>
-
 
 </body>
 </html>
