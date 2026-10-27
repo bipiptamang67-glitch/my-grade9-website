@@ -1,72 +1,71 @@
 
 <!DOCTYPE html>
-<html>
-<head><escape><link rel="stylesheet" href="style.css"></escape>
-    <title>My Portfolio</title>
-    <style>
-        body {
-            background-color: lightblue;
-            font-family: Arial;
-            text-align: center;
-        }
-
-        h1 {
-            color: darkblue;
-        }
-
-        h2 {
-            color: darkgreen;
-        }
-    </style>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | BlockWorld</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    nav {
-        background-color: darkblue;
-        padding: 15px;
-        text-align: center;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        margin: 10px;
-        font-size: 18px;
-    }
-
-    nav a:hover {
-        color: yellow;
-    }
-</style>
-
 <body>
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="gallery.html">Gallery</a> |
-    <a href="contact.html">Contact</a> |
-    <a href="information.html">Information</a>
-</nav>
-<hr>
 
+<header>
+  <div class="header-inner">
+    <p class="logo">⛏ BLOCKWORLD</p>
+    <nav>
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a href="information.html">Information</a>
+    </nav>
+  </div>
+</header>
 
-    <h1>Welcome to My Portfolio!</h1>
+<main>
+  <section class="hero">
+    <span class="tag">Your adventure starts here</span>
+    <h1>Welcome to BlockWorld!</h1>
+    <p>Explore amazing block-inspired landscapes, discover creative builds, and enter a world of imagination. This website is my Grade 9 HTML and CSS project.</p>
+    <a class="button" href="gallery.html">Explore Gallery →</a>
+    <a class="button" href="information.html">About My Project</a>
+  </section>
 
-    <p>Hello! My name is Bipin.</p>
-    <p>Welcome to my personal website.</p>
+  <section class="section">
+    <h2>Choose Your Adventure</h2>
+    <p class="muted">Discover what makes the world of blocks exciting!</p>
 
-    <h2>My Hobbies</h2>
-    <ul>
-        <li>Playing games</li>
-        <li>Learning computers</li>
-        <li>Watching videos</li>
-    </ul>
+    <div class="card-grid">
+      <article class="card">
+        <div class="icon">🌲</div>
+        <h3>Explore</h3>
+        <p>Discover forests, mountains, and beautiful landscapes.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">🧱</div>
+        <h3>Build</h3>
+        <p>Use your imagination to create amazing buildings and designs.</p>
+      </article>
+
+      <article class="card">
+        <div class="icon">💎</div>
+        <h3>Learn</h3>
+        <p>This project helps me practise HTML, CSS, links, tables, and forms.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>About This Website</h2>
+    <p>This website uses HTML for its structure and CSS for its colors, layout, animations, and responsive design.</p>
+    <p>Use the navigation menu to visit all four pages.</p>
+  </section>
+</main>
+
 <footer>
-    <hr>
-    <p>Welcome to My Portfolio</p>
-    <p>Created by: Bipin Tamang | Grade 9</p>
-    <p>&copy; 2026 My Portfolio</p>
+  <p>Created by <strong>Bipin Tamang</strong></p>
+  <p>Grade 9 Computer Science Project · HTML &amp; CSS</p>
 </footer>
-
 
 </body>
 </html>
-    
